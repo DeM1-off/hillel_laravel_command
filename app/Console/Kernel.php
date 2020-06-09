@@ -3,6 +3,11 @@
 namespace App\Console;
 
 use App\Console\Commands\CovidAdd;
+use App\Console\Commands\CovidByCountry;
+use App\Console\Commands\CovidDelete;
+use App\Console\Commands\CovidGet;
+use App\Console\Commands\CovidList;
+use App\Console\Commands\CovidUpdate;
 use Illuminate\Console\Scheduling\Schedule;
 use Laravel\Lumen\Console\Kernel as ConsoleKernel;
 
@@ -16,6 +21,12 @@ class Kernel extends ConsoleKernel
     protected $commands = [
 
         CovidAdd::class,
+        CovidList::class,
+        CovidUpdate::class,
+        CovidDelete::class,
+        CovidGet::class,
+        CovidByCountry::class,
+
     ];
 
     /**
